@@ -3,7 +3,6 @@ import {
     AdaptivityProvider,
     AppRoot,
     ConfigProvider,
-    useAdaptivity,
 } from "@vkontakte/vkui";
 
 
