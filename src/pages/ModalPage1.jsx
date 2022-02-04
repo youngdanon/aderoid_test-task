@@ -1,6 +1,5 @@
 import {
     Button,
-    Div,
     Group,
     Link,
     Text, Title,
@@ -26,10 +25,13 @@ const ImgBlock = styled.img.attrs({
   border-radius: .75rem .75rem 0 0;
 `;
 
-// const PageButton = styled(Button).attrs({
-//     size:'l',
-//     mode:'primary',
-// })
+const PageButton = styled(Button).attrs({
+    size: 'l',
+    mode: 'primary',
+    stretched: true,
+})`
+    margin-top: .7rem;
+`
 
 const ModalPage1 = () => {
     return (
@@ -37,24 +39,18 @@ const ModalPage1 = () => {
             <ImgBlock/>
             <Container>
                 <Group className="page-title" separator={'hide'}>
-                    <Div>
                         <Text weight="regular">Lorem ipsum</Text>
                         <Title level={'2'} weight={'medium'}>Lorem ipsum dolor</Title>
-                    </Div>
                 </Group>
                 <Group className="advantages-list">
                     <AdvantageBlock icon={success}>Lorem ipsum dolor sit amet, consectetur </AdvantageBlock>
                     <AdvantageBlock icon={checklist}>Excepteur sint occaecat cupidatat non proident</AdvantageBlock>
                     <AdvantageBlock icon={teacher}>Sed ut perspiciatis unde omnis iste natus </AdvantageBlock>
                 </Group>
-
-                <Div>
-                    <Link href={'/'}>Узнать подробнее...</Link>
-                    <Button>
-                        Отлично
-                    </Button>
-                </Div>
-
+                <Link href={'/'}>Узнать подробнее...</Link>
+                <PageButton>
+                    Отлично
+                </PageButton>
             </Container>
         </div>
     )

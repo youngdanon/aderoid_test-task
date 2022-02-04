@@ -5,7 +5,7 @@ import {Cell, Text} from "@vkontakte/vkui";
 const Icon = styled.img`
   width: 2.5rem;
   height: 2.5rem;
-  margin: 0 .5rem 0 0;
+  margin: 0 1.5rem 0 0;
 `
 const AdvantageBlock = (props) => {
     return (
