@@ -35,7 +35,7 @@ const PageButton = styled(Button).attrs({
 
 const ModalPage1 = () => {
     return (
-        <div>
+        <div className='adv-modal'>
             <ImgBlock/>
             <Container>
                 <Group className="page-title" separator={'hide'}>
