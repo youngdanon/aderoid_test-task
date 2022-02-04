@@ -21,10 +21,10 @@ import axios from "axios";
 
 
 const OrganizationInfo = (props) => {
-    let data = props.responseData.suggestions[0].data
     let organizationName = ''
     let organizationStatus = ''
     if (props.responseData.suggestions.length > 0) {
+        let data = props.responseData.suggestions[0].data
         organizationName = data.name.short_with_opf
         organizationStatus = data.state.status
     }
