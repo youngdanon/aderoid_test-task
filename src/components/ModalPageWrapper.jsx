@@ -1,27 +1,15 @@
 import {
-    ANDROID,
-    IOS, ModalCard,
     ModalPage, ModalPageHeader,
-    PanelHeaderButton, PanelHeaderClose,
-    useAdaptivity, usePlatform, ViewWidth
+    PanelHeaderButton,
+    useAdaptivity, ViewWidth
 } from "@vkontakte/vkui";
 import React from "react";
-import {
-    Icon20CancelCircleFillRed,
-    Icon24Dismiss,
-    Icon24DismissDark,
-    Icon24DismissOverlay,
-    Icon28CancelCircleFillRed
-} from "@vkontakte/icons";
+import {Icon24DismissDark,} from "@vkontakte/icons";
 
-function Icon20CancelCircleFillRedCancelCircleFillRed() {
-    return null;
-}
 
 const ModalPageWrapper = ({headerText, ...props}) => {
     const {viewWidth} = useAdaptivity();
     const isMobile = viewWidth <= ViewWidth.MOBILE;
-    const platform = usePlatform();
 
     return (
         <ModalPage

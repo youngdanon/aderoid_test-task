@@ -1,18 +1,13 @@
 import {
-    Button, Caption, Cell, CellButton,
-    Div, FixedLayout, Gallery,
-    Group, Header, IOS, Link, ModalPage, ModalPageHeader,
-    PanelHeaderButton, PanelHeaderClose, SimpleCell, Subhead,
+    Button,
+    Div,
+    Group,
+    Link,
     Text, Title,
-    useAdaptivity,
-    usePlatform,
-    ViewWidth
 } from "@vkontakte/vkui";
 import React from "react";
 import styled from "styled-components";
-import {Icon24Dismiss, Icon24ScanViewfinderOutline} from "@vkontakte/icons";
 
-import placeholder from "../assets/img/placeholder.jpg";
 import colored_placeholder from "../assets/img/colored_placeholder.jpg"
 import checklist from "../assets/img/checklist.svg"
 import success from "../assets/img/success.svg"
@@ -36,15 +31,13 @@ const ImgBlock = styled.img.attrs({
 //     mode:'primary',
 // })
 
-const ModalPage1 = (props) => {
-
+const ModalPage1 = () => {
     return (
         <div>
             <ImgBlock/>
             <Container>
                 <Group className="page-title" separator={'hide'}>
                     <Div>
-                        {/*<Caption level={'1'} weight={'regular'}>Lorem ipsum</Caption>*/}
                         <Text weight="regular">Lorem ipsum</Text>
                         <Title level={'2'} weight={'medium'}>Lorem ipsum dolor</Title>
                     </Div>

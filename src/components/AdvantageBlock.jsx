@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import checklist from "../assets/img/checklist.svg";
-import {Caption, Cell, Subhead, Text} from "@vkontakte/vkui";
+import {Cell, Text} from "@vkontakte/vkui";
 
 const Icon = styled.img`
   width: 2.5rem;

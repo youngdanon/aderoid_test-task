@@ -5,8 +5,11 @@ import {
     Panel, PanelHeader, Root,
     SplitCol, SplitLayout, View, withAdaptivity, withPlatform
 } from "@vkontakte/vkui";
-import ModalPage1 from "./ModalPage1";
+
 import ModalPageWrapper from "../components/ModalPageWrapper";
+import ModalPage1 from "./ModalPage1";
+import ModalPage2 from "./ModalPage2";
+
 
 const MainPage = withPlatform(
     withAdaptivity(
@@ -23,7 +26,7 @@ const MainPage = withPlatform(
                         <ModalPage1/>
                     </ModalPageWrapper>
                     <ModalPageWrapper headerText='Окно #2' id={'testModal2'} onClose={onClose} settlingHeight={100}>
-                        <ModalPage1/>
+                        <ModalPage2/>
                     </ModalPageWrapper>
                 </ModalRoot>
             )

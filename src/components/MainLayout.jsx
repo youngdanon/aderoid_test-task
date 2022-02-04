@@ -3,18 +3,11 @@ import {
     AdaptivityProvider,
     AppRoot,
     ConfigProvider,
-    Panel,
-    PanelHeader,
-    SplitCol,
-    SplitLayout,
     useAdaptivity,
-    View,
-    ViewWidth
 } from "@vkontakte/vkui";
 
 
 const MainLayout = ({children}) => {
-    const {viewWidth} = useAdaptivity();
     return (
         <ConfigProvider>
             <AdaptivityProvider>
