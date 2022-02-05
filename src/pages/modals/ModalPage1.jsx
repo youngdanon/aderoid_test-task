@@ -14,10 +14,9 @@ import teacher from "../../assets/img/teacher.svg"
 import {Container} from "../../components/Container";
 import AdvantageBlock from "../../components/AdvantageBlock";
 
-const IMAGE = colored_placeholder
 
 const ImgBlock = styled.img.attrs({
-    src: IMAGE,
+    src: colored_placeholder,
 })`
   width: 100%;
   height: 10%;

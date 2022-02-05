@@ -7,12 +7,19 @@ const Icon = styled.img`
   height: 2.5rem;
   margin: 0 1.5rem 0 0;
 `
+
+const AdvantageTextWrapper = styled(Cell).attrs({
+    multiline: true,
+    hasActive: false,
+})`
+  margin-bottom: 4%;
+`
+
 const AdvantageBlock = (props) => {
     return (
-
-        <Cell multiline hasActive={false} before={<Icon src={props.icon}/>} style={{marginBottom: '1.2rem'}}>
+        <AdvantageTextWrapper before={<Icon src={props.icon}/>}>
             <Text weight={'regular'}>{props.children}</Text>
-        </Cell>
+        </AdvantageTextWrapper>
     )
 }
 export default AdvantageBlock;

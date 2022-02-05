@@ -1,13 +1,13 @@
+import React from "react";
 import {
     ModalPage, ModalPageHeader,
     PanelHeaderButton,
     useAdaptivity, ViewWidth
 } from "@vkontakte/vkui";
-import React from "react";
 import {Icon24DismissDark,} from "@vkontakte/icons";
 
 
-const ModalPageWrapper = ({headerText, ...props}) => {
+const ModalPageWrapper = (props) => {
     const {viewWidth} = useAdaptivity();
     const isMobile = viewWidth <= ViewWidth.MOBILE;
 
