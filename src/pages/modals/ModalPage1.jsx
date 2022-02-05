@@ -48,7 +48,7 @@ const ModalPage1 = (props) => {
 
                 <Div>
                     <Link href={'/404'}>Узнать подробнее...</Link>
-                    <PageButton onClick={props.onClose}>
+                    <PageButton onClick={props.onClickButton}>
                         Отлично
                     </PageButton>
                 </Div>
