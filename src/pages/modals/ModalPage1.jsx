@@ -1,5 +1,5 @@
 import {
-    Button,
+    Button, Div,
     Group,
     Link,
     Text, Title,
@@ -7,13 +7,12 @@ import {
 import React from "react";
 import styled from "styled-components";
 
-import colored_placeholder from "../assets/img/colored_placeholder.jpg"
-import checklist from "../assets/img/checklist.svg"
-import success from "../assets/img/success.svg"
-import teacher from "../assets/img/teacher.svg"
-import {Container} from "../components/Container";
-import AdvantageBlock from "../components/AdvantageBlock";
-
+import colored_placeholder from "../../assets/img/colored_placeholder.jpg"
+import checklist from "../../assets/img/checklist.svg"
+import success from "../../assets/img/success.svg"
+import teacher from "../../assets/img/teacher.svg"
+import {Container} from "../../components/Container";
+import AdvantageBlock from "../../components/AdvantageBlock";
 
 const IMAGE = colored_placeholder
 
@@ -30,7 +29,7 @@ const PageButton = styled(Button).attrs({
     mode: 'primary',
     stretched: true,
 })`
-    margin-top: .7rem;
+  margin-top: .7rem;
 `
 
 const ModalPage1 = () => {
@@ -47,10 +46,13 @@ const ModalPage1 = () => {
                     <AdvantageBlock icon={checklist}>Excepteur sint occaecat cupidatat non proident</AdvantageBlock>
                     <AdvantageBlock icon={teacher}>Sed ut perspiciatis unde omnis iste natus </AdvantageBlock>
                 </Group>
-                <Link href={'/'}>Узнать подробнее...</Link>
-                <PageButton>
-                    Отлично
-                </PageButton>
+
+                <Div>
+                    <Link href={'/'}>Узнать подробнее...</Link>
+                    <PageButton>
+                        Отлично
+                    </PageButton>
+                </Div>
             </Container>
         </div>
     )

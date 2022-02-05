@@ -7,8 +7,8 @@ import {
 } from "@vkontakte/vkui";
 
 import ModalPageWrapper from "../components/ModalPageWrapper";
-import ModalPage1 from "./ModalPage1";
-import ModalPage2 from "./ModalPage2";
+import ModalPage1 from "./modals/ModalPage1";
+import ModalPage2 from "./modals/ModalPage2";
 
 
 const MainPage = withPlatform(
