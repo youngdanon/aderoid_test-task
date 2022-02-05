@@ -31,7 +31,7 @@ const PageButton = styled(Button).attrs({
   margin-top: .7rem;
 `
 
-const ModalPage1 = () => {
+const ModalPage1 = (props) => {
     return (
         <div className='adv-modal'>
             <ImgBlock/>
@@ -47,8 +47,8 @@ const ModalPage1 = () => {
                 </Group>
 
                 <Div>
-                    <Link href={'/'}>Узнать подробнее...</Link>
-                    <PageButton>
+                    <Link href={'/404'}>Узнать подробнее...</Link>
+                    <PageButton onClick={props.onClose}>
                         Отлично
                     </PageButton>
                 </Div>

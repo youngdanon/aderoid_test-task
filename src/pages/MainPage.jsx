@@ -23,7 +23,7 @@ const MainPage = withPlatform(
             const modal = (
                 <ModalRoot activeModal={activeModal}>
                     <ModalPageWrapper headerText='Окно #1' id={'testModal'} onClose={onClose} settlingHeight={100}>
-                        <ModalPage1/>
+                        <ModalPage1 onClose={onClose}/>
                     </ModalPageWrapper>
                     <ModalPageWrapper headerText='Окно #2' id={'testModal2'} onClose={onClose} settlingHeight={100}>
                         <ModalPage2/>
