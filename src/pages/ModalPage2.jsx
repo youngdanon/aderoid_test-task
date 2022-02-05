@@ -9,21 +9,10 @@ import React, {useState} from "react";
 import axios from "axios";
 
 
-// const IMAGE = colored_placeholder
-//
-// const ImgBlock = styled.img.attrs({
-//     src: IMAGE,
-// })`
-//   width: 100%;
-//   height: 10%;
-//   border-radius: .75rem .75rem 0 0;
-// `;
-
-
 const OrganizationInfo = (props) => {
     let organizationName = ''
     let organizationStatus = ''
-    if (props.responseData.suggestions.length > 0) {
+    if (props.responseData.sgilength > 0) {
         let data = props.responseData.suggestions[0].data
         organizationName = data.name.short_with_opf
         organizationStatus = data.state.status

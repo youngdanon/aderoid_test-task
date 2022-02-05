@@ -39,8 +39,8 @@ const ModalPage1 = () => {
             <ImgBlock/>
             <Container>
                 <Group className="page-title" separator={'hide'}>
-                        <Text weight="regular">Lorem ipsum</Text>
-                        <Title level={'2'} weight={'medium'}>Lorem ipsum dolor</Title>
+                    <Text weight="regular">Lorem ipsum</Text>
+                    <Title level={'2'} weight={'medium'}>Lorem ipsum dolor</Title>
                 </Group>
                 <Group className="advantages-list">
                     <AdvantageBlock icon={success}>Lorem ipsum dolor sit amet, consectetur </AdvantageBlock>
