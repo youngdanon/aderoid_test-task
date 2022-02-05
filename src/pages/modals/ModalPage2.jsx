@@ -8,6 +8,7 @@ import {
 } from "@vkontakte/vkui";
 import React, {useEffect, useState} from "react";
 import axios from "axios";
+import OrganizationInfo from "../../components/modalPage2/OrganizationInfo";
 
 const ModalPage2 = () => {
 
