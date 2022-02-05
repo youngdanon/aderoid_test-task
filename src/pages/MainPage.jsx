@@ -20,6 +20,10 @@ const MainPage = withPlatform(
                 setActiveModal(null)
             }
 
+            const onClickButton = () => {
+                setActiveModal('testModal2')
+            }
+
             const modal = (
                 <ModalRoot activeModal={activeModal}>
                     <ModalPageWrapper headerText='Окно #1' id={'testModal'} onClose={onClose} settlingHeight={100}>
