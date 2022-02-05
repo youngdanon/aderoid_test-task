@@ -16,7 +16,7 @@ const ModalPage2 = () => {
     const [responseData, setResponseData] = useState(false)
     const [inputData, setInputData] = useState("")
 
-    const token = 'd3703bb6feda31f27dd2ddd585e46781f8435697'
+    const token = process.env.TOKEN
 
     const onChange = (e) => {
         if (!isNaN(e.target.value)) {
