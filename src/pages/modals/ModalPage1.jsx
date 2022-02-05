@@ -11,8 +11,8 @@ import colored_placeholder from "../../assets/img/colored_placeholder.jpg"
 import checklist from "../../assets/img/checklist.svg"
 import success from "../../assets/img/success.svg"
 import teacher from "../../assets/img/teacher.svg"
-import {Container} from "../../components/Container";
-import AdvantageBlock from "../../components/AdvantageBlock";
+import {Container} from "../../components/modalPage1/Container";
+import AdvantageBlock from "../../components/modalPage1/AdvantageBlock";
 
 
 const ImgBlock = styled.img.attrs({

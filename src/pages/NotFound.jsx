@@ -10,7 +10,7 @@ import {
     Title,
     View
 } from "@vkontakte/vkui";
-import {Container} from "../components/Container";
+import {Container} from "../components/modalPage1/Container";
 
 
 const NotFound = () => {
